@@ -17,19 +17,19 @@ Imbalanced datasets in machine learning often lead to biased model predictions, 
 SMOTE generates new synthetic minority data points by interpolating between several nearest minority class neighbors. For each minority class sample, it calculates the K_NN nearest minority class neighbors (typically K_NN=5) using Euclidean distance. It then creates new synthetic data points along the line segment joining the current minority sample and its selected neighbor. This helps the decision regions associated with the minority class examples to grow larger and less specific.
 
 - **Authors**: N. V. Chawla, K. W. Bowyer, L. O. Hall, and W. P. Kegelmeyer
-- **Reference**: [SMOTE Paper](https://doi.org/10.1613/jair.953)
-- **Code**: [SMOTE in Imbalanced-Learn](https://github.com/scikit-learn-contrib/imbalanced-learn)
+- **Reference**: [SMOTE Paper](https://www.researchgate.net/publication/220543125_SMOTE_Synthetic_Minority_Over-sampling_Technique)
+- **Code**: [SMOTE in Imbalanced-Learn](https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.SMOTE.html)
 
 ### ADASYN (Adaptive Synthetic Sampling):
 ADASYN adaptively generates more synthetic data samples for minority examples that are harder to learn. Unlike SMOTE, which produces the same number of synthetic samples for each minority example, ADASYN decides the number of synthetic examples based on the distribution density of each minority example. This not only reduces bias from imbalanced data distribution but also adaptively shifts the decision boundary toward difficult examples.
 
 - **Authors**: H. He, Y. Bai, E. A. Garcia, and S. Li
 - **Reference**: [ADASYN Paper](https://doi.org/10.1109/IJCNN.2008.4633969)
-- **Code**: [ADASYN in Imbalanced-Learn](https://github.com/scikit-learn-contrib/imbalanced-learn)
+- **Code**: [ADASYN in Imbalanced-Learn](https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.ADASYN.html)
 
 ### Random Oversampling:
 Random oversampling is a simple method that deals with class imbalance by randomly selecting and duplicating minority class examples. While computationally cheap and intuitive, it tends to cause overfitting due to making exact copies of existing data points.
-
+- **Code**: [Random Oversampling in Imbalanced-Learn](https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.RandomOverSampler.html)
 ## Deep Generative Models
 
 ### GAN (Generative Adversarial Network):
@@ -110,7 +110,7 @@ GANSO combines GANs with vector Markov Random Fields to synthesize realistic ins
 **Note**: Not all models have open-source code available. If code is not provided, links direct to the research papers.
 
 ## Resources and Links
-## Resources and Links
 - [arXiv](https://arxiv.org/) - Primary source for machine learning and deep learning research papers
+- [ResearchGate](https://www.researchgate.net/) - Find additional academic references and publications.
 - [Papers with Code](https://paperswithcode.com/) - Collection of papers with available implementations
 - [IEEE Xplore](https://ieeexplore.ieee.org/) - Digital library for published papers
