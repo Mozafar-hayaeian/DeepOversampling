@@ -104,18 +104,13 @@ GANSO combines GANs with vector Markov Random Fields to synthesize realistic ins
 
 - **Authors**: A. Salazar, L. Vergara, and G. Safont
 - **Reference**: [GANSO Paper](https://doi.org/10.1016/j.eswa.2020.113819)
-**Note on Implementations**: While there are many implementations of these models available online (e.g., on GitHub, Papers with Code), we only provide links to the original papers. For implementations, we recommend:
-- Checking the authors' official repositories (if available)
-- Using established machine learning libraries
-- Carefully evaluating any third-party implementations based on:
-  - Code quality and documentation
-  - Community adoption (stars, forks)
-  - Maintenance status and updates
-  - Compatibility with current frameworks
+  
 **Note**: Not all models have open-source code available. If code is not provided, links direct to the research papers.
 
 ## Resources and Links
 - [arXiv](https://arxiv.org/) - Primary source for machine learning and deep learning research papers
 - [ResearchGate](https://www.researchgate.net/) - Find additional academic references and publications.
-- [Papers with Code](https://paperswithcode.com/) - Collection of papers with available implementations
+- [imbalanced-learn](https://imbalanced-learn.org/) - A trusted Python library offering implementations of sampling techniques for handling imbalanced datasets, including popular oversampling methods like SMOTE and ADASYN.
 - [IEEE Xplore](https://ieeexplore.ieee.org/) - Digital library for published papers
+- [ScienceDirect](https://www.sciencedirect.com/) - A vast repository of scientific and technical research, including papers on machine learning and data science.
+
