@@ -36,7 +36,7 @@ Random oversampling is a simple method that deals with class imbalance by random
 GANs train a generator network to produce synthetic samples that are indistinguishable from real samples by a discriminator network. The training process is adversarial with the two networks competing against each other. While GANs can capture complex distributions and generate realistic samples, they often face challenges with training stability and mode collapse.
 
 - **Authors**: I. Goodfellow, J. Pouget-Abadie, M. Mirza, B. Xu, D. Warde-Farley, S. Ozair, A. Courville, and Y. Bengio
-- **Reference**: [GAN Paper](https://papers.nips.cc/paper/2014/hash/5ca3e9b122f61f8f06494c97b1afccf3-Abstract.html)
+- **Reference**: [GAN Paper](https://arxiv.org/abs/1406.2661)
 - **Code**: Available on [GitHub](https://github.com/goodfeli/adversarial)
 
 ### CGAN (Conditional GAN):
@@ -44,21 +44,21 @@ CGANs extend the classical GAN by conditioning both the generator and discrimina
 
 - **Authors**: M. Mirza and S. Osindero
 - **Reference**: [CGAN Paper](https://arxiv.org/abs/1411.1784)
-- **Code**: [CGAN Implementation](https://github.com/pytorch/examples/tree/main/dcgan)
+- **Code**: [CGAN Implementation](https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html)
 
 ### VAE (Variational Autoencoder):
 VAEs learn an explicit latent space representation of the input data using probabilistic encoder and decoder networks. They enable sampling new points from the learned latent distribution but may face issues like posterior collapse and poor reconstruction of complex data.
 
 - **Authors**: D. P. Kingma and M. Welling
 - **Reference**: [VAE Paper](https://arxiv.org/abs/1312.6114)
-- **Code**: [VAE Implementation](https://github.com/pytorch/examples/tree/main/vae)
+- **Code**: [VAE Implementation](https://pytorch.org/tutorials/beginner/vae_tutorial.html)
 
 ### CVAE (Conditional VAE):
 CVAEs enable conditioning on class labels for minority class oversampling. The model learns class-dependent distributions by maximizing a lower bound for the conditional distribution. It provides better control over generation but may face higher computational costs.
 
 - **Authors**: K. Sohn, H. Lee, and X. Yan
 - **Reference**: [CVAE Paper](https://papers.nips.cc/paper/2015/hash/8d55a249e6baa5c06772297520da2051-Abstract.html)
-
+- **Code**: [CVAE Implementation](https://github.com/timbmg/VAE-CVAE-MNIST?tab=readme-ov-file)
 ### BAGAN (Balancing GAN):
 BAGAN is designed specifically for oversampling minority classes in imbalanced image classification. It leverages an autoencoder along with the GAN structure and initializes the decoder as the generator and encoder as part of the discriminator. This initialization enables learning class conditioning in the latent space.
 
