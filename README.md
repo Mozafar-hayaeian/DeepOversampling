@@ -51,14 +51,12 @@ VAEs learn an explicit latent space representation of the input data using proba
 
 - **Authors**: D. P. Kingma and M. Welling
 - **Reference**: [VAE Paper](https://arxiv.org/abs/1312.6114)
-- **Code**: [VAE Implementation](https://pytorch.org/tutorials/beginner/vae_tutorial.html)
 
 ### CVAE (Conditional VAE):
 CVAEs enable conditioning on class labels for minority class oversampling. The model learns class-dependent distributions by maximizing a lower bound for the conditional distribution. It provides better control over generation but may face higher computational costs.
 
 - **Authors**: K. Sohn, H. Lee, and X. Yan
 - **Reference**: [CVAE Paper](https://papers.nips.cc/paper/2015/hash/8d55a249e6baa5c06772297520da2051-Abstract.html)
-- **Code**: [CVAE Implementation](https://github.com/timbmg/VAE-CVAE-MNIST?tab=readme-ov-file)
 ### BAGAN (Balancing GAN):
 BAGAN is designed specifically for oversampling minority classes in imbalanced image classification. It leverages an autoencoder along with the GAN structure and initializes the decoder as the generator and encoder as part of the discriminator. This initialization enables learning class conditioning in the latent space.
 
