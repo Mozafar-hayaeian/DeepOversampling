@@ -105,7 +105,7 @@ GANSO combines GANs with vector Markov Random Fields to synthesize realistic ins
 - **Authors**: A. Salazar, L. Vergara, and G. Safont
 - **Reference**: [GANSO Paper](https://doi.org/10.1016/j.eswa.2020.113819)
   
-**Note**: Not all models have open-source code available. If code is not provided, links direct to the research papers.
+**Note**: Not all models have open-source implementations available in standard libraries. In cases where standard library implementations are not available, links direct to the original research papers.
 
 ## Resources and Links
 - [arXiv](https://arxiv.org/) - Primary source for machine learning and deep learning research papers
