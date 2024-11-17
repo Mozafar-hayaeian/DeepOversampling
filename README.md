@@ -18,18 +18,19 @@ SMOTE generates new synthetic minority data points by interpolating between seve
 
 - **Authors**: N. V. Chawla, K. W. Bowyer, L. O. Hall, and W. P. Kegelmeyer
 - **Reference**: [SMOTE Paper](https://www.researchgate.net/publication/220543125_SMOTE_Synthetic_Minority_Over-sampling_Technique)
-- **Code**: [SMOTE in Imbalanced-Learn](https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.SMOTE.html)
+- **Implementations**: [Imbalanced-Learn library](https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.SMOTE.html)
 
 ### ADASYN (Adaptive Synthetic Sampling):
 ADASYN adaptively generates more synthetic data samples for minority examples that are harder to learn. Unlike SMOTE, which produces the same number of synthetic samples for each minority example, ADASYN decides the number of synthetic examples based on the distribution density of each minority example. This not only reduces bias from imbalanced data distribution but also adaptively shifts the decision boundary toward difficult examples.
 
 - **Authors**: H. He, Y. Bai, E. A. Garcia, and S. Li
 - **Reference**: [ADASYN Paper](https://doi.org/10.1109/IJCNN.2008.4633969)
-- **Code**: [ADASYN in Imbalanced-Learn](https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.ADASYN.html)
+- **Implementations**: [GitHub Implementation](https://github.com/rcamino/deep-generative-models
+)**,** [Imbalanced-Learn library](https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.ADASYN.html)
 
 ### Random Oversampling:
 Random oversampling is a simple method that deals with class imbalance by randomly selecting and duplicating minority class examples. While computationally cheap and intuitive, it tends to cause overfitting due to making exact copies of existing data points.
-- **Code**: [Random Oversampling in Imbalanced-Learn](https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.RandomOverSampler.html)
+- **Implementations**: [Imbalanced-Learn library](https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.RandomOverSampler.html)
 ## Deep Generative Models
 
 ### GAN (Generative Adversarial Network):
@@ -37,20 +38,21 @@ GANs train a generator network to produce synthetic samples that are indistingui
 
 - **Authors**: I. Goodfellow, J. Pouget-Abadie, M. Mirza, B. Xu, D. Warde-Farley, S. Ozair, A. Courville, and Y. Bengio
 - **Reference**: [GAN Paper](https://arxiv.org/abs/1406.2661)
-- **Code**: Available on [GitHub](https://github.com/goodfeli/adversarial)
+- **Implementations**: [Original Authors' Implementation](https://github.com/goodfeli/adversarial)**,** [GitHub Implementation](https://github.com/rcamino/deep-generative-models)
 
 ### CGAN (Conditional GAN):
 CGANs extend the classical GAN by conditioning both the generator and discriminator on the class label. This allows for targeted generation of specific minority classes, providing more control over the generation process. However, they still inherit GAN training stability issues.
 
 - **Authors**: M. Mirza and S. Osindero
 - **Reference**: [CGAN Paper](https://arxiv.org/abs/1411.1784)
-- **Code**: [CGAN Implementation](https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html)
+- **Implementations**: [PyTorch Implementation](https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html)
 
 ### VAE (Variational Autoencoder):
 VAEs learn an explicit latent space representation of the input data using probabilistic encoder and decoder networks. They enable sampling new points from the learned latent distribution but may face issues like posterior collapse and poor reconstruction of complex data.
 
 - **Authors**: D. P. Kingma and M. Welling
 - **Reference**: [VAE Paper](https://arxiv.org/abs/1312.6114)
+- **Implementations**: [GitHub Implementation](https://github.com/rcamino/deep-generative-models)
 
 ### CVAE (Conditional VAE):
 CVAEs enable conditioning on class labels for minority class oversampling. The model learns class-dependent distributions by maximizing a lower bound for the conditional distribution. It provides better control over generation but may face higher computational costs.
@@ -68,6 +70,7 @@ medGAN combines a GAN with an autoencoder to handle high-dimensional multi-label
 
 - **Authors**: E. Choi, S. Biswal, B. Malin, J. Duke, W. F. Stewart, and J. Sun
 - **Reference**: [medGAN Paper](https://arxiv.org/abs/1703.06490)
+- **Implementations**: [GitHub Implementation](https://github.com/rcamino/deep-generative-models)
 
 ### ARAE (Adversarially Regularized Autoencoder):
 ARAE integrates a discrete autoencoder with a latent representation regularized by a GAN. It uses adversarial training to align the latent distribution with a prior, enabling effective modeling of complex discrete distributions.
